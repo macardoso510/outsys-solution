@@ -27,24 +27,14 @@ const About: React.FC = () => {
 
   const team = [
     {
-      name: "Carlos Oliveira",
-      role: "CEO & Fundador",
-      description: "15 anos de experiência em tecnologia empresarial"
+      name: "Mateus Cardoso",
+      role: "CEO & Desenvolvedor",
+      description: "Desenvolvedor full-stack apaixonado por criar soluções que transformam negócios"
     },
     {
-      name: "Ana Rodrigues",
-      role: "CTO",
-      description: "Especialista em desenvolvimento de sistemas escaláveis"
-    },
-    {
-      name: "Ricardo Santos",
-      role: "Head de Suporte",
-      description: "Garantindo a melhor experiência para nossos clientes"
-    },
-    {
-      name: "Mariana Costa",
-      role: "UX/UI Designer",
-      description: "Criando interfaces intuitivas e acessíveis"
+      name: "Pedro Alexandre",
+      role: "Diretor Comercial",
+      description: "Especialista em relacionamento com clientes e desenvolvimento de negócios"
     }
   ]
 
@@ -127,26 +117,28 @@ const About: React.FC = () => {
       </section>
 
       {/* Our Story */}
+            {/* Story & Timeline */}
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-primary mb-6">Nossa História</h2>
-              <div className="space-y-6 text-lg text-neutral-dark leading-relaxed">
+              <div className="space-y-4 text-lg text-neutral-dark">
                 <p>
-                  A OutSys Solution nasceu da percepção de que muitas empresas
-                  brasileiras enfrentavam dificuldades para implementar soluções
-                  tecnológicas adequadas às suas necessidades e orçamentos.
+                  Fundada em 2025, a OutSys Solution nasceu da visão de democratizar
+                  o acesso à tecnologia para pequenas e médias empresas. Começamos
+                  como uma startup enxuta, focada em criar soluções que realmente
+                  fazem a diferença no dia a dia dos negócios.
                 </p>
                 <p>
-                  Fundada em 2020, começamos com uma equipe pequena mas determinada
-                  a fazer a diferença. Nosso primeiro produto, o Sistema Domus,
-                  foi desenvolvido ouvindo as necessidades reais dos empresários.
+                  Nossa missão é clara: desenvolver o Sistema Domus, uma plataforma
+                  completa para gestão imobiliária que será revolucionária no mercado.
+                  Estamos nos preparando para lançar uma solução que vai simplificar
+                  a vida de corretores e imobiliárias em todo o Brasil.
                 </p>
                 <p>
-                  Hoje, atendemos mais de 500 empresas em todo o país, sempre
-                  mantendo nosso compromisso com a simplicidade, qualidade e
-                  acessibilidade.
+                  Com foco na inovação e qualidade, estamos construindo as bases
+                  para ser referência em tecnologia para o setor imobiliário.
                 </p>
               </div>
             </div>
@@ -156,24 +148,12 @@ const About: React.FC = () => {
               </h3>
               <div className="space-y-4">
                 <div className="border-l-4 border-secondary pl-4">
-                  <div className="font-semibold text-primary">2020</div>
+                  <div className="font-semibold text-primary">2025</div>
                   <div className="text-neutral-dark">Fundação da OutSys Solution</div>
                 </div>
                 <div className="border-l-4 border-secondary pl-4">
-                  <div className="font-semibold text-primary">2021</div>
+                  <div className="font-semibold text-primary">Em breve</div>
                   <div className="text-neutral-dark">Lançamento do Sistema Domus</div>
-                </div>
-                <div className="border-l-4 border-secondary pl-4">
-                  <div className="font-semibold text-primary">2022</div>
-                  <div className="text-neutral-dark">100 clientes atendidos</div>
-                </div>
-                <div className="border-l-4 border-secondary pl-4">
-                  <div className="font-semibold text-primary">2023</div>
-                  <div className="text-neutral-dark">Expansão para novos mercados</div>
-                </div>
-                <div className="border-l-4 border-secondary pl-4">
-                  <div className="font-semibold text-primary">2024</div>
-                  <div className="text-neutral-dark">500+ empresas atendidas</div>
                 </div>
               </div>
             </div>
@@ -210,34 +190,6 @@ const About: React.FC = () => {
                 </p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="section-padding bg-primary text-white">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Nossa Trajetória em Números</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-secondary mb-2">500+</div>
-              <div className="text-gray-200">Empresas Atendidas</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-secondary mb-2">5+</div>
-              <div className="text-gray-200">Anos de Mercado</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-secondary mb-2">50+</div>
-              <div className="text-gray-200">Cidades Brasileiras</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-secondary mb-2">24/7</div>
-              <div className="text-gray-200">Suporte Disponível</div>
-            </div>
           </div>
         </div>
       </section>

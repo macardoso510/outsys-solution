@@ -7,8 +7,7 @@ import {
   Building,
   TrendingUp,
   Shield,
-  Star,
-  Quote
+  Monitor
 } from 'lucide-react'
 
 const Home: React.FC = () => {
@@ -35,40 +34,19 @@ const Home: React.FC = () => {
     }
   ]
 
-  const testimonials = [
-    {
-      name: "Maria Silva",
-      company: "Tech Solutions",
-      text: "O sistema da OutSys revolucionou nossa gestão. Agora temos controle total sobre nossos processos.",
-      rating: 5
-    },
-    {
-      name: "João Santos",
-      company: "Comercial ABC",
-      text: "Suporte excepcional e uma plataforma intuitiva. Recomendo para qualquer empresa.",
-      rating: 5
-    },
-    {
-      name: "Ana Costa",
-      company: "Serviços Premium",
-      text: "Implementação rápida e resultados imediatos. Nossa produtividade aumentou significativamente.",
-      rating: 5
-    }
-  ]
-
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="hero-gradient min-h-screen flex items-center">
+      <section className="hero-gradient min-h-screen flex items-center justify-center py-20">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[600px]">
             <div className="text-white fade-in-up">
-              <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Transformamos
-                <span className="text-secondary block">Tecnologia</span>
-                em Soluções
+              <h1 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight text-hero-shadow">
+                <span className="text-white">Transformamos</span>
+                <span className="text-secondary block font-extrabold">Tecnologia</span>
+                <span className="text-white">em Soluções</span>
               </h1>
-              <p className="text-xl mb-8 text-gray-200 leading-relaxed">
+              <p className="text-xl mb-8 text-gray-100 leading-relaxed text-hero-shadow">
                 Soluções modernas para gestão de empresas de todos os tamanhos.
                 Tecnologia que qualquer empresa pode usar, com suporte especializado
                 e segurança garantida.
@@ -165,16 +143,7 @@ const Home: React.FC = () => {
                 oferecendo sistemas intuitivos que geram resultados reais
                 para seu negócio.
               </p>
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">500+</div>
-                  <div className="text-neutral-dark">Empresas Atendidas</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">5+</div>
-                  <div className="text-neutral-dark">Anos de Experiência</div>
-                </div>
-              </div>
+
               <Link
                 to="/sobre"
                 className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 inline-flex items-center gap-2"
@@ -188,7 +157,7 @@ const Home: React.FC = () => {
                 <h3 className="text-2xl font-semibold text-primary mb-6 text-center">
                   Nossa Missão
                 </h3>
-                <Quote className="w-8 h-8 text-secondary mb-4 mx-auto" />
+                <TrendingUp className="w-8 h-8 text-secondary mb-4 mx-auto" />
                 <p className="text-lg text-neutral-dark text-center italic">
                   "Democratizar o acesso à tecnologia empresarial,
                   criando soluções que empoderam negócios de todos
@@ -200,39 +169,49 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Coming Soon Section */}
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-4">
-              O que nossos clientes dizem
+              O que está por vir
             </h2>
             <p className="text-xl text-neutral-dark">
-              Depoimentos reais de empresas que transformaram sua gestão conosco
+              Estamos desenvolvendo soluções inovadoras para revolucionar a gestão imobiliária
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="card">
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} size={20} className="text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-neutral-dark mb-6 italic">
-                  "{testimonial.text}"
-                </p>
-                <div>
-                  <div className="font-semibold text-primary">
-                    {testimonial.name}
-                  </div>
-                  <div className="text-sm text-neutral-dark">
-                    {testimonial.company}
-                  </div>
-                </div>
-              </div>
-            ))}
+            <div className="card text-center">
+              <Monitor className="w-16 h-16 text-secondary mx-auto mb-6" />
+              <h3 className="text-xl font-semibold text-primary mb-4">
+                Sistema Domus
+              </h3>
+              <p className="text-neutral-dark">
+                Plataforma completa para gestão imobiliária com recursos avançados
+                de CRM, controle de estoque de imóveis e automação de processos.
+              </p>
+            </div>
+            <div className="card text-center">
+              <Users className="w-16 h-16 text-secondary mx-auto mb-6" />
+              <h3 className="text-xl font-semibold text-primary mb-4">
+                Portal do Cliente
+              </h3>
+              <p className="text-neutral-dark">
+                Interface dedicada para seus clientes acompanharem o andamento
+                de suas negociações e acessarem documentos importantes.
+              </p>
+            </div>
+            <div className="card text-center">
+              <TrendingUp className="w-16 h-16 text-secondary mx-auto mb-6" />
+              <h3 className="text-xl font-semibold text-primary mb-4">
+                Analytics Avançado
+              </h3>
+              <p className="text-neutral-dark">
+                Relatórios inteligentes e dashboards em tempo real para
+                acompanhar performance de vendas e identificar oportunidades.
+              </p>
+            </div>
           </div>
         </div>
       </section>

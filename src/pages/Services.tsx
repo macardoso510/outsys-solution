@@ -16,15 +16,15 @@ const Services: React.FC = () => {
     {
       icon: <Monitor className="w-12 h-12 text-secondary" />,
       title: "Sistema Domus",
-      description: "Plataforma completa de gestão empresarial",
+      description: "Plataforma completa de gestão imobiliária (Em desenvolvimento)",
       features: [
-        "Interface intuitiva e moderna",
-        "Gestão de vendas e estoque",
-        "Relatórios em tempo real",
-        "Multi-usuário com controle de permissões",
-        "Backup automático na nuvem"
+        "Gestão completa de imóveis e clientes",
+        "Controle de visitas e agendamentos",
+        "Relatórios de vendas e locações",
+        "Sistema de comissões automatizado",
+        "Portal do cliente integrado"
       ],
-      price: "A partir de R$ 99/mês"
+      price: "Em breve - Valores especiais de lançamento"
     },
     {
       icon: <Database className="w-12 h-12 text-secondary" />,
